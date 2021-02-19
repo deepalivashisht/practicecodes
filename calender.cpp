@@ -25,12 +25,12 @@ int monthodddays(int m,int y,int d)
                             mon[2]++;         
                 if(d>mon[m])
                  {
-                             cout<<"1 Invalid";
+                             cout<<"Invalid";
                              exit(0);
                  }
                 if(m>((sizeof(mon)/sizeof(mon[0]))-1))
                  {
-                             cout<<"2 Invalid";
+                             cout<<"Invalid";
                              exit(0);
                  }
                 
@@ -43,12 +43,12 @@ int monthodddays(int m,int y,int d)
 }
 int main()
 {
-int month,date,year,dateodd,totalodd;
-string day[]={"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
-        printf("\nEnter your Date in (dd/mm/yyyy) format : ");
-        scanf("%d/%d/%d", &date,&month,&year);
-dateodd=date%7;
-totalodd=(yearodddays(year)+monthodddays(month,year,date)+dateodd)%7;
-      cout<<day[totalodd];
-return 0;
+                int month,date,year,dateodd,totalodd;
+                string day[]={"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
+                printf("\nEnter your Date in (dd/mm/yyyy) format : ");
+                scanf("%d/%d/%d", &date,&month,&year);
+                dateodd=date%7;
+                totalodd=(yearodddays(year)+monthodddays(month,year,date)+dateodd)%7;
+                cout<<day[totalodd];
+                return 0;
 }
