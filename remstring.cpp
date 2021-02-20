@@ -3,7 +3,7 @@
 using namespace std;
 void s1erase(string a,string b)
 {
-	int i,j,flag;
+     int i,j,flag;
      for(i=0;i<=a.length();i++)
 	 {
 		 flag=1;
@@ -11,12 +11,12 @@ void s1erase(string a,string b)
 		 {
 		     if(a[i]==b[j])
 		     {
-			     flag=0;
+			 flag=0;
 		         break;
 		     }
 		 }
 		 if(flag==1)
-	     cout<<a[i];
+	         cout<<a[i];
 	 }
 }
 int main()
