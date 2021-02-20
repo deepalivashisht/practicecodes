@@ -1,4 +1,4 @@
-//Roots of quadratic equations
+//natue and values of roots of quadratic equations
 #include<iostream>
 #include<math.h>
 using namespace std;
