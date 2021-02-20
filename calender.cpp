@@ -25,12 +25,12 @@ int monthodddays(int m,int y,int d)
                             mon[2]++;         
                 if(d>mon[m])
                  {
-                             cout<<"Invalid";
+                             cout<<"Invalid date";
                              exit(0);
                  }
                 if(m>((sizeof(mon)/sizeof(mon[0]))-1))
                  {
-                             cout<<"Invalid";
+                             cout<<"Invalid date";
                              exit(0);
                  }
                 
